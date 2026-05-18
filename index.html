@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Asif Al Amin | Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="bg-animation"></div>
+<div class="custom-cursor"></div>
+
+<nav>
+
+<div class="logo">
+
+ASIF <span>AI</span> AMIN
+
+</div>
+
+<ul>
+
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#Research & Publications">Research & Publications</a></li>
+<li><a href="#journey">Journey</a></li>
+<li><a href="#contact">Contact</a></li>
+
+
+</ul>
+
+</nav>
+
+
+<section class="hero">
+
+<div class="hero-left">
+
+<p class="small">
+AI • ML • DL • NLP • Computer Vision
+</p>
+
+<h1>
+
+Asif <span>Al</span> Amin
+
+</h1>
+
+<h2>
+
+AI Engineer | Researcher 
+
+</h2>
+
+<p class="description">
+
+Passionate Computer Science and Engineering student specializing in Artificial Intelligence, Machine Learning, Deep Learning, Computer Vision, NLP and intelligent systems.
+
+Focused on building impactful AI solutions including Agro Doctor and smart predictive systems.
+
+</p>
+
+<button onclick="scrollToJourney()">
+Explore Journey
+</button>
+
+</div>
+
+
+<div class="hero-right">
+
+<div class="profile-box">
+
+<img src="images/profile.jpg" class="profile-img">
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<div class="stats">
+
+<div class="card">
+
+<h2>10+</h2>
+<p>Projects</p>
+
+</div>
+
+
+<div class="card">
+
+<h2>8+</h2>
+<p>Skills</p>
+
+</div>
+
+
+<div class="card">
+
+<h2>5+</h2>
+<p>Achievements</p>
+
+</div>
+
+
+<div class="card">
+
+<h2>3+</h2>
+<p>Research</p>
+
+</div>
+
+</div>
+
+
+<section id="about">
+
+<h2 class="section-title">About Me</h2>
+
+<div class="about-container">
+
+<div class="about-left glass">
+
+<h3>AI Enthusiast | Research-Oriented Developer</h3>
+
+<p>
+
+I am Asif Al Amin, a Computer Science and Engineering student at Bangladesh University of Business and Technology (BUBT), passionate about Artificial Intelligence, Machine Learning, Deep Learning, Computer Vision, and Data Analytics.
+
+</p>
+
+<p>
+
+I enjoy transforming innovative ideas into intelligent systems that solve real-world challenges. My experience includes AI-based applications, smart agriculture systems, computer vision projects, and research-driven development.
+
+</p>
+
+<p>I have worked on projects such as Agro Doctor, an AI-powered agricultural management system designed to support precision farming through intelligent recommendations and decision-making. My technical toolkit includes Python, TensorFlow, PyTorch, Scikit-Learn and modern AI frameworks for building scalable and impactful systems.
+
+Beyond development, I actively participate in research activities, innovation competitions, workshops, and technology communities to continuously strengthen my problem-solving and analytical skills.<p>I am particularly interested in combining AI research with practical implementation to create technologies that contribute meaningful impact to society.
+</p> 
+
+</div>
+
+
+<div class="about-right">
+
+<div class="info-box">
+
+<h4>🎓 Education</h4>
+
+<p>B.Sc in Computer Science & Engineering</p>
+
+<p>Bangladesh University Of Business and Technology(BUBT)</p>
+
+</div>
+
+<div class="info-box">
+
+<h4>🔬 Research Interests</h4>
+
+<p>AI • NLP • Computer Vision</p>
+
+<!-- <p>Smart Agriculture</p> -->
+
+</div>
+
+<div class="info-box">
+
+<h4>🚀 Career Goal</h4>
+
+<p>AI Engineer</p>
+
+<p>Researcher</p>
+
+</div>
+
+<!--
+
+<div class="info-box">
+
+<h4>📄 Publications</h4>
+
+<p>Research Papers:</p>
+
+<p>Coming Soon</p>
+
+</div>
+
+-->
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+<section id="skills">
+
+<h1>Skills</h1>
+
+<div class="grid">
+
+<div class="card">Python</div>
+
+<div class="card">Machine Learning</div>
+
+<div class="card">Deep Learning</div>
+
+<div class="card">TensorFlow</div>
+
+<div class="card">PyTorch</div>
+
+<div class="card">Computer Vision</div>
+
+<div class="card">NLP</div>
+
+<div class="card">Power BI</div>
+
+<div class="card">SQL</div>
+
+<div class="card">Streamlit</div>
+
+</div>
+
+</section>
+
+
+
+<section id="projects">
+
+<h2 class="section-title">
+Projects Portfolio
+</h2>
+
+<div class="project-grid">
+
+
+<div class="project-card"
+onclick="showProject(
+'🌱 Agro Doctor AI',
+'AI-powered smart agriculture platform designed for crop recommendation, fertilizer recommendation, fish recommendation and intelligent farmer support system using Machine Learning and Streamlit.'
+)">
+
+<div class="project-icon">🌱</div>
+
+<h3>Agro Doctor AI</h3>
+
+<p>
+Smart Agriculture Platform using AI and ML
+</p>
+
+<span>
+Explore →
+</span>
+
+</div>
+
+
+
+<div class="project-card"
+onclick="showProject(
+'📊 RetailMind AI',
+'AI-driven retail analytics system for customer behavior analysis, KPI monitoring, sales forecasting and business insights.'
+)">
+
+<div class="project-icon">📊</div>
+
+<h3>RetailMind AI</h3>
+
+<p>
+Retail Analytics & Prediction System
+</p>
+
+<span>
+Explore →
+</span>
+
+</div>
+
+
+
+<div class="project-card"
+onclick="showProject(
+'💼 Skill2Job',
+'Intelligent career recommendation system for skill-gap analysis and job suggestions.'
+)">
+
+<div class="project-icon">💼</div>
+
+<h3>Skill2Job</h3>
+
+<p>
+AI Based Career Platform
+</p>
+
+<span>
+Explore →
+</span>
+
+</div>
+
+
+
+<div class="project-card"
+onclick="showProject(
+'⚡ Smart Energy Meter',
+'Low-cost IoT based smart energy meter with cloud monitoring and persistent storage.'
+)">
+
+<div class="project-icon">⚡</div>
+
+<h3>Smart Energy Meter</h3>
+
+<p>
+IoT Research Project
+</p>
+
+<span>
+Explore →
+</span>
+
+</div>
+
+
+
+<div class="project-card"
+onclick="showProject(
+'🧠 Bengali Emotion NLP',
+'Multi-label emotion classification system for Bengali language using NLP.'
+)">
+
+<div class="project-icon">🧠</div>
+
+<h3>Bengali Emotion NLP</h3>
+
+<p>
+Natural Language Processing
+</p>
+
+<span>
+Explore →
+</span>
+
+</div>
+
+
+
+<div class="project-card"
+onclick="showProject(
+'🖼️ CNN Classification',
+'Deep learning image classification model using CNN.'
+)">
+
+<div class="project-icon">🖼️</div>
+
+<h3>CNN Classification</h3>
+
+<p>
+Deep Learning Project
+</p>
+
+<span>
+Explore →
+</span>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="Research & Publications">
+
+<h2 class="section-title">
+Research & Publications
+</h2>
+
+<div class="publication-card">
+
+<div class="pub-top">
+
+<span class="tag">
+📑 ECCT 2026
+</span>
+
+<span class="paper-id">
+Paper ID: 404
+</span>
+
+</div>
+
+<h3 class="paper-title">
+
+Design and Implementation of a Low-Cost IoT-Based Smart Energy Meter with Real-Time Cloud Monitoring, Cost Calculation, and Non-Volatile Data Persistence
+
+</h3>
+
+<p class="paper-description">
+
+Contributed as a co-author to a research paper submitted to ECCT 2026, focusing on the design and implementation of a cost-effective IoT-based smart energy monitoring system for residential environments. The project integrates ESP32-based cloud connectivity, real-time analytics, cost estimation, and non-volatile data persistence for improved energy management.
+
+</p>
+
+<div class="pub-details">
+
+<div class="detail-box">
+
+<strong>📌 Status</strong>
+
+<p>Submitted</p>
+
+</div>
+
+<div class="detail-box">
+
+<strong>👨‍💻 Role</strong>
+
+<p>Co-author</p>
+
+</div>
+
+<div class="detail-box">
+
+<strong>⚙ Technologies</strong>
+
+<p>ESP32 • IoT • Blynk • Cloud</p>
+
+</div>
+
+<div class="detail-box">
+
+<strong>📅 Year</strong>
+
+<p>2026</p>
+
+</div>
+
+</div>
+
+
+<div class="paper-buttons">
+
+<a href="#"
+target="_blank"
+class="paper-btn">
+
+📄 View Paper
+
+</a>
+
+<a href="https://drive.google.com/file/d/1uSMd98OwngHzP8EQt3PsD4vCsdGyffsI/view?usp=sharing"
+target="_blank"
+class="certificate-btn">
+
+🏆 Paper Certificate
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="journey">
+
+<h1>Achievement Journey</h1>
+
+<div class="gallery-container">
+
+<div class="gallery-card">
+<img src="images/champion.jpg">
+<div class="overlay">
+<h2>🏆 Champion</h2>
+</div>
+</div>
+
+<div class="gallery-card">
+<img src="images/dailysun.jpg">
+<div class="overlay">
+<h2>📰 Media Coverage</h2>
+</div>
+</div>
+
+<div class="gallery-card">
+<img src="images/expo.jpg">
+<div class="overlay">
+<h2>🚀 Expo</h2>
+</div>
+</div>
+
+<div class="gallery-card">
+<img src="images/hult.jpg">
+<div class="overlay">
+<h2>🌍 National Competition</h2>
+</div>
+</div>
+
+<div class="gallery-card">
+<img src="images/idea.jpg">
+<div class="overlay">
+<h2>💡 Innovation</h2>
+</div>
+</div>
+
+<div class="gallery-card">
+<img src="images/national.jpg">
+<div class="overlay">
+<h2>🎯 Team BUBT</h2>
+</div>
+</div>
+
+<div class="gallery-card">
+<img src="images/paperBubt.jpg">
+<div class="overlay">
+<h2>🏅 Recognition</h2>
+</div>
+</div>
+
+<div class="gallery-card">
+<img src="images/presentation.jpg">
+<div class="overlay">
+<h2>🎤 Presentation</h2>
+</div>
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+<section id="contact">
+
+<h2 class="section-title">
+Let's Connect
+</h2>
+
+<div class="contact-grid">
+
+<div class="contact-box">
+
+<div class="icon">
+📧
+</div>
+
+<h3>Email</h3>
+
+<p>
+contact.asif.bubt@gmail.com
+</p>
+
+</div>
+
+
+<div class="contact-box">
+
+<div class="icon">
+📱
+</div>
+
+<h3>Phone</h3>
+
+<p>
++8801870923530
+</p>
+
+</div>
+
+
+<div class="contact-box">
+
+<div class="icon">
+📍
+</div>
+
+<h3>Location</h3>
+
+<p>
+Dhaka, Bangladesh
+</p>
+
+</div>
+
+
+<div class="contact-box">
+
+<div class="icon">
+💼
+</div>
+
+<h3>LinkedIn</h3>
+
+<a href="#">
+
+Visit Profile →
+
+</a>
+
+</div>
+
+</div>
+
+<div class="social-links">
+
+<a href="#">
+🌐 Portfolio
+</a>
+
+<a href="https://github.com/Asif489">
+💻 GitHub
+</a>
+
+<a href="https://www.linkedin.com/in/asif-al-amin-4b537a297/">
+🔗 LinkedIn
+</a>
+
+</div>
+
+</section>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
