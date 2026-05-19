@@ -1,47 +1,22 @@
-const cursor=document.querySelector(".custom-cursor");
-
-document.addEventListener("mousemove",(e)=>{
-
-cursor.style.left=e.clientX+"px";
-
-cursor.style.top=e.clientY+"px";
-
-});
+// ===== Smooth Scroll =====
 
 function scrollToJourney(){
 
 document.getElementById("journey")
-.scrollIntoView();
+.scrollIntoView({
+
+behavior:"smooth"
+
+});
 
 }
+
+
+// ===== Project Popup =====
 
 function showProject(title,description){
 
-document.getElementById(
-"popup"
-).style.display="block";
-
-document.getElementById(
-"projectTitle"
-).innerHTML=title;
-
-document.getElementById(
-"projectDescription"
-).innerHTML=description;
-
-}
-
-function closePopup(){
-
-document.getElementById(
-"popup"
-).style.display="none";
-
-}
-
-function showProject(title, description){
-
-const popup = document.createElement("div");
+const popup=document.createElement("div");
 
 popup.className="popup";
 
@@ -49,7 +24,11 @@ popup.innerHTML=`
 
 <div class="popup-content">
 
-<span class="close-btn">&times;</span>
+<span class="close-btn">
+
+✖
+
+</span>
 
 <h2>${title}</h2>
 
@@ -61,12 +40,21 @@ popup.innerHTML=`
 
 document.body.appendChild(popup);
 
-document.querySelector(".close-btn")
+
+// Close button
+
+popup.querySelector(
+".close-btn"
+)
+
 .onclick=()=>{
 
 popup.remove();
 
-}
+};
+
+
+// Click outside popup
 
 popup.onclick=(e)=>{
 
@@ -76,6 +64,93 @@ popup.remove();
 
 }
 
-}
+};
 
 }
+
+
+
+// ===== AI Cursor =====
+
+const cursor=
+document.querySelector(
+".custom-cursor"
+);
+
+const trail=
+document.querySelector(
+".cursor-trail"
+);
+
+
+// Mouse movement
+
+document.addEventListener(
+
+"mousemove",
+
+(e)=>{
+
+cursor.style.left=
+e.clientX+"px";
+
+cursor.style.top=
+e.clientY+"px";
+
+trail.style.left=
+e.clientX+"px";
+
+trail.style.top=
+e.clientY+"px";
+
+}
+
+);
+
+
+// Hover animation
+
+const hoverItems=
+
+document.querySelectorAll(
+
+"a,button,.project-card,.gallery-card,.contact-box"
+
+);
+
+hoverItems.forEach(item=>{
+
+item.addEventListener(
+
+"mouseenter",
+
+()=>{
+
+cursor.style.transform=
+"translate(-50%,-50%) scale(2)";
+
+trail.style.transform=
+"translate(-50%,-50%) scale(1.5)";
+
+}
+
+);
+
+
+item.addEventListener(
+
+"mouseleave",
+
+()=>{
+
+cursor.style.transform=
+"translate(-50%,-50%) scale(1)";
+
+trail.style.transform=
+"translate(-50%,-50%) scale(1)";
+
+}
+
+);
+
+});
